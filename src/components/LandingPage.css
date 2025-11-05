@@ -1,0 +1,601 @@
+/* Greek Minimalist Landing Page Styles */
+
+.landing-page {
+  width: 100%;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+/* Hero Section */
+.hero {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  padding: 4rem 2rem;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+  overflow: hidden;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: 
+    repeating-linear-gradient(
+      90deg,
+      transparent,
+      transparent 98px,
+      rgba(0, 0, 0, 0.02) 100px
+    ),
+    repeating-linear-gradient(
+      0deg,
+      transparent,
+      transparent 98px,
+      rgba(0, 0, 0, 0.02) 100px
+    );
+  pointer-events: none;
+}
+
+.hero-content {
+  text-align: center;
+  z-index: 2;
+  max-width: 800px;
+  position: relative;
+}
+
+.greek-pattern-top {
+  position: absolute;
+  top: -50px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 200px;
+  height: 100px;
+  background: 
+    repeating-linear-gradient(
+      45deg,
+      transparent,
+      transparent 10px,
+      rgba(139, 69, 19, 0.1) 10px,
+      rgba(139, 69, 19, 0.1) 20px
+    );
+  opacity: 0.3;
+}
+
+.hero-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  letter-spacing: -0.02em;
+  position: relative;
+}
+
+.greek-letter {
+  font-size: 6rem;
+  color: #8b4513;
+  display: inline-block;
+  margin-right: 0.2em;
+  text-shadow: 2px 2px 4px rgba(139, 69, 19, 0.1);
+}
+
+.hero-subtitle {
+  font-size: 1.5rem;
+  color: #5a6c7d;
+  margin-bottom: 1.5rem;
+  font-weight: 400;
+  letter-spacing: 0.05em;
+}
+
+.hero-description {
+  font-size: 1.1rem;
+  color: #4a5568;
+  line-height: 1.8;
+  margin-bottom: 2.5rem;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.hero-buttons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.btn-primary,
+.btn-secondary {
+  padding: 1rem 2.5rem;
+  font-size: 1.1rem;
+  font-weight: 500;
+  text-decoration: none;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+  display: inline-block;
+  border: 2px solid transparent;
+}
+
+.btn-primary {
+  background: linear-gradient(135deg, #8b4513 0%, #a0522d 100%);
+  color: white;
+  box-shadow: 0 4px 15px rgba(139, 69, 19, 0.3);
+}
+
+.btn-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(139, 69, 19, 0.4);
+}
+
+.btn-secondary {
+  background: transparent;
+  color: #8b4513;
+  border: 2px solid #8b4513;
+}
+
+.btn-secondary:hover {
+  background: #8b4513;
+  color: white;
+  transform: translateY(-2px);
+}
+
+.btn-large {
+  padding: 1.25rem 3rem;
+  font-size: 1.2rem;
+}
+
+/* Hero Illustration */
+.hero-illustration {
+  position: absolute;
+  right: 10%;
+  top: 50%;
+  transform: translateY(-50%);
+  opacity: 0.1;
+  z-index: 1;
+}
+
+.clipboard-icon {
+  font-size: 15rem;
+  animation: float 6s ease-in-out infinite;
+}
+
+.floating-elements {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+}
+
+.float-element {
+  position: absolute;
+  font-size: 3rem;
+  opacity: 0.6;
+  animation: float 4s ease-in-out infinite;
+}
+
+.float-1 {
+  top: 20%;
+  left: -20%;
+  animation-delay: 0s;
+}
+
+.float-2 {
+  top: 60%;
+  right: -20%;
+  animation-delay: 1s;
+}
+
+.float-3 {
+  bottom: 20%;
+  left: 10%;
+  animation-delay: 2s;
+}
+
+.float-4 {
+  top: 40%;
+  right: 10%;
+  animation-delay: 1.5s;
+}
+
+@keyframes float {
+  0%, 100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+
+/* Features Section */
+.features {
+  padding: 6rem 0;
+  background: white;
+  position: relative;
+}
+
+.section-title {
+  font-family: 'Playfair Display', serif;
+  font-size: 3rem;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.greek-accent {
+  color: #8b4513;
+  position: relative;
+}
+
+.greek-accent::after {
+  content: '';
+  position: absolute;
+  bottom: -5px;
+  left: 0;
+  right: 0;
+  height: 3px;
+  background: linear-gradient(90deg, transparent, #8b4513, transparent);
+  opacity: 0.3;
+}
+
+.features-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  margin-top: 3rem;
+}
+
+.feature-card {
+  background: #fafafa;
+  padding: 2.5rem;
+  border-radius: 20px;
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid #e8e8e8;
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-card::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(90deg, transparent, rgba(139, 69, 19, 0.05), transparent);
+  transition: left 0.5s ease;
+}
+
+.feature-card:hover::before {
+  left: 100%;
+}
+
+.feature-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  border-color: #8b4513;
+}
+
+.feature-icon {
+  font-size: 3.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.feature-card h3 {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.feature-card p {
+  color: #5a6c7d;
+  line-height: 1.7;
+}
+
+.feature-card code {
+  background: #e8e8e8;
+  color: #8b4513;
+  font-weight: 500;
+}
+
+/* Privacy Section */
+.privacy-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #f5f7fa 0%, #e8eef5 100%);
+}
+
+.privacy-content {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+  align-items: center;
+}
+
+.privacy-list {
+  list-style: none;
+  font-size: 1.1rem;
+  line-height: 2;
+}
+
+.privacy-list li {
+  margin-bottom: 1rem;
+  color: #4a5568;
+  padding-left: 2rem;
+  position: relative;
+}
+
+.privacy-list li::before {
+  content: '✓';
+  position: absolute;
+  left: 0;
+  color: #8b4513;
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.privacy-list strong {
+  color: #2c3e50;
+}
+
+.privacy-illustration {
+  text-align: center;
+}
+
+.shield-icon {
+  font-size: 12rem;
+  opacity: 0.2;
+  animation: float 6s ease-in-out infinite;
+}
+
+/* AI Features Section */
+.ai-features-section {
+  padding: 6rem 0;
+  background: white;
+}
+
+.ai-features-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 3.5rem;
+  margin-top: 4rem;
+  max-width: 1100px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 2rem;
+}
+
+.ai-feature {
+  background: linear-gradient(135deg, #fff 0%, #f8f9fa 100%);
+  padding: 2.5rem;
+  border-radius: 15px;
+  border-left: 4px solid #8b4513;
+  transition: all 0.3s ease;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+}
+
+.ai-feature:hover {
+  transform: translateX(5px);
+  box-shadow: 0 5px 20px rgba(0, 0, 0, 0.08);
+}
+
+.ai-feature h3 {
+  font-size: 1.4rem;
+  margin-bottom: 1rem;
+  color: #2c3e50;
+  font-weight: 600;
+}
+
+.ai-feature p {
+  color: #5a6c7d;
+  line-height: 1.7;
+}
+
+/* Download Section */
+.download-section {
+  padding: 6rem 0;
+  background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+  color: white;
+  text-align: center;
+}
+
+.download-section .section-title {
+  color: white;
+}
+
+.download-section .greek-accent {
+  color: #d4a574;
+}
+
+.download-section .greek-accent::after {
+  background: linear-gradient(90deg, transparent, #d4a574, transparent);
+}
+
+.download-description {
+  font-size: 1.2rem;
+  margin-bottom: 3rem;
+  opacity: 0.9;
+  max-width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.platform-buttons {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-bottom: 3rem;
+  flex-wrap: wrap;
+}
+
+.platform-btn {
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+  padding: 1.5rem 2.5rem;
+  border-radius: 15px;
+  text-decoration: none;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  min-width: 150px;
+}
+
+.platform-btn:hover {
+  background: rgba(255, 255, 255, 0.2);
+  transform: translateY(-5px);
+}
+
+.platform-icon {
+  font-size: 2.5rem;
+}
+
+.github-link {
+  margin-top: 2rem;
+}
+
+.download-section .btn-primary {
+  background: linear-gradient(135deg, #d4a574 0%, #c49464 100%);
+  box-shadow: 0 4px 15px rgba(212, 165, 116, 0.3);
+}
+
+.download-section .btn-primary:hover {
+  box-shadow: 0 6px 20px rgba(212, 165, 116, 0.4);
+}
+
+/* Footer */
+.footer {
+  padding: 3rem 0;
+  background: #1a1a1a;
+  color: white;
+  text-align: center;
+  position: relative;
+}
+
+.greek-pattern-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 50px;
+  background: 
+    repeating-linear-gradient(
+      -45deg,
+      transparent,
+      transparent 10px,
+      rgba(212, 165, 116, 0.1) 10px,
+      rgba(212, 165, 116, 0.1) 20px
+    );
+  opacity: 0.3;
+}
+
+.footer-content {
+  position: relative;
+  z-index: 2;
+}
+
+.footer-text {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+  opacity: 0.9;
+}
+
+.heart {
+  color: #ff6b6b;
+  animation: pulse 1.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.2);
+  }
+}
+
+.footer-license {
+  opacity: 0.6;
+  font-size: 0.9rem;
+}
+
+/* Responsive Design */
+@media (max-width: 968px) {
+  .hero-title {
+    font-size: 3.5rem;
+  }
+
+  .greek-letter {
+    font-size: 4.5rem;
+  }
+
+  .hero-illustration {
+    display: none;
+  }
+
+  .privacy-content {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
+  .section-title {
+    font-size: 2.5rem;
+  }
+
+  .features-grid,
+  .ai-features-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 640px) {
+  .hero-title {
+    font-size: 2.5rem;
+  }
+
+  .greek-letter {
+    font-size: 3rem;
+  }
+
+  .hero-subtitle {
+    font-size: 1.2rem;
+  }
+
+  .hero-description {
+    font-size: 1rem;
+  }
+
+  .btn-primary,
+  .btn-secondary {
+    padding: 0.875rem 2rem;
+    font-size: 1rem;
+  }
+
+  .section-title {
+    font-size: 2rem;
+  }
+
+  .container {
+    padding: 0 1.5rem;
+  }
+}
+
