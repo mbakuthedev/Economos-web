@@ -2,7 +2,7 @@ import React from 'react'
 import './LandingPage.css'
 
 const LandingPage: React.FC = () => {
-  const githubUrl = 'https://github.com/mbakuthedev/Economos' // Update with actual GitHub URL
+  const githubUrl = 'https://github.com/mbakuthedev/Ecomonos' // Update with actual GitHub URL
 
   return (
     <div className="landing-page">
