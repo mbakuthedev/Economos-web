@@ -2,7 +2,7 @@ import React from 'react'
 import './LandingPage.css'
 
 const LandingPage: React.FC = () => {
-  const githubUrl = 'https://github.com/mbakuthedev/Ecomonos' // Update with actual GitHub URL
+  const githubUrl = 'https://github.com/mbakuthedev/Economos' // Update with actual GitHub URL
 
   return (
     <div className="landing-page">
@@ -11,7 +11,7 @@ const LandingPage: React.FC = () => {
         <div className="hero-content">
           <div className="greek-pattern-top"></div>
           <h1 className="hero-title">
-            <span className="greek-letter">Ε</span>comonos
+            <span className="greek-letter">Ε</span>conomos
           </h1>
           <p className="hero-subtitle">Multi-Clipboard Manager</p>
           <p className="hero-description">
@@ -199,12 +199,7 @@ const LandingPage: React.FC = () => {
       {/* Footer */}
       <footer className="footer">
         <div className="container">
-          <div className="footer-content">
-            <p className="footer-text">
-              Made with <span className="heart">🖤</span> for productivity enthusiasts
-            </p>
-            <p className="footer-license">MIT License - Open Source</p>
-          </div>
+          
           <div className="greek-pattern-bottom"></div>
         </div>
       </footer>
