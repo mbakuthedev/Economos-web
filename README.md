@@ -1,14 +1,3 @@
-# Ecomonos Landing Page
-
-A beautiful, minimalist landing page for Ecomonos - Multi-Clipboard Manager, featuring a Greek-inspired design aesthetic.
-
-## Features
-
-- 🎨 Greek minimalist design with elegant typography
-- 📱 Fully responsive layout
-- ⚡ Built with React + TypeScript + Vite
-- 🎯 Modern UI with smooth animations
-- 🔗 Integrated GitHub download links
 
 ## Getting Started
 
